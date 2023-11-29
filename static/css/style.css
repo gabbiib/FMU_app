@@ -217,12 +217,12 @@ tr:hover {
 
 /* Datepicker */
 #datepicker {
-    width: 80px;
+    width: 70px;
     height: 10px;
-    padding: 8px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 14px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* Estilo adicional para el datepicker */
@@ -232,6 +232,7 @@ tr:hover {
     border: 1px solid #ddd;
     opacity: 1;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 .ui-datepicker-calendar {
@@ -253,36 +254,38 @@ tr:hover {
 /* Estilo para el mes del datepicker */
 .ui-datepicker-title {
     order: 2;
-    width: 60%;
+    width: 80%;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* Estilo para el botón "prev" del datepicker */
 .ui-datepicker-prev {
     order: -1;
     width: 20%;
-    background-color: #3498db;
-    border: 1px solid #2980b9;
-    color: #fff;
+    background-color: rgb(218, 182, 22);
+    border: 1px solid #394867;
+    color: #394867;
     font-size: 14px;
     margin-right: 5px;
+    text-align: center; /* Centra el texto */
 }
 
 /* Estilo para el botón "next" del datepicker */
 .ui-datepicker-next {
     order: 0;
     width: 20%;
-    background-color: #3498db;
-    border: 1px solid #2980b9;
-    color: #fff;
+    background-color: rgb(218, 182, 22);
+    border: 1px solid #394867;
+    color: #394867;
     font-size: 14px;
-    margin-left: 5px;
+    margin-left: 9px;
+    text-align: center; /* Centra el texto */
 }
 
 /* Estilo adicional para los botones "prev" y "next" al pasar el ratón sobre ellos */
 .ui-datepicker-prev:hover, .ui-datepicker-next:hover {
-    background-color: #2980b9;
+    background-color: rgb(218, 182, 22);
 }
 
 /* Estilo para la fecha activa */
