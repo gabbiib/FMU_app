@@ -304,7 +304,7 @@ tr:hover {
 /* Botones */
 /* Estilo para el botón Obtener Rentabilidades */
 .boton {
-    background-color: #007BFF;
+    background-color: rgb(197, 128, 49);
     color: #fff;
     height: 30px;
     padding: 10px 20px;
@@ -317,7 +317,7 @@ tr:hover {
 }
 /* Estilo específico para el botón en portafolios.html */
 .boton-portafolio {
-    background-color: #007BFF;
+    background-color: rgb(197, 128, 49);
     color: #fff;
     height: 30px;
     padding: 10px 20px;
