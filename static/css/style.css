@@ -180,12 +180,17 @@ h1, h2 {
 /* Estilos para Tablas */
 table {
     width: 100%;
+    margin-bottom: 1rem;
+    color: #252e38;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    border-spacing: 0;
+    border: 1px solid #000000;
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    padding: 0.75rem;
+    vertical-align: top;
+    border: 1px solid #29291e;
 }
 
 th, td {
@@ -194,8 +199,8 @@ th, td {
 }
 
 th {
-    background-color: #394867;
-    color: #fff;
+    background-color: rgb(197, 190, 85);
+    color: #000000;
 }
 
 tr:hover {
@@ -324,7 +329,7 @@ tr:hover {
     margin: 10px 0;
     position: absolute; /* Cambiar a posición absoluta */
     top: 220px; /* Ajustar la distancia desde la parte superior */
-    left: 700px; /* Ajustar la distancia desde la derecha */
+    left: 700px; /* Ajustar la distancia desde la izquierda */
     text-align: center;
 }
 
@@ -397,3 +402,4 @@ label{
 .asidebar {
     color: #ddd;
 }
+
