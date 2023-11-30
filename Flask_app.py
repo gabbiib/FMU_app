@@ -75,6 +75,9 @@ def get_rentabilidades(df):
     # Formatear 'Rentabilidad Acumulada' con tres decimales y el signo de porcentaje
     df['Rentabilidad Acumulada'] = df['Rentabilidad Acumulada'].apply(lambda x: f'{x:.3f}%')
 
+    # Renombrar visualmente la columna "fecha"
+    df.rename(columns={'fecha': 'Fecha'}, inplace=True)
+
     html_table = df.to_html(classes='table', index=False, escape=False)
     return html_table
 
@@ -99,6 +102,18 @@ def get_portafolio(run, tipo_cartera, fecha):
     df = df[df['Run Fondo'] == run]
     df = df[df['fecha'] == fecha]
     df['Run Fondo'] = df["Run Fondo"].apply(crear_enlace)
+
+    # Reemplazar NaN o nulos por "-"
+    df.fillna('-', inplace=True)
+
+    # Agregar "%" a las columnas especificadas
+    df['Porcentaje Capital Emisor'] = df['Porcentaje Capital Emisor'].astype(str) + '%'
+    df['Porcentaje Activo Emisor'] = df['Porcentaje Activo Emisor'].astype(str) + '%'
+    df['Porcentaje Activo Fondo'] = df['Porcentaje Activo Fondo'].astype(str) + '%'
+
+    # Renombrar visualmente la columna "fecha"
+    df.rename(columns={'fecha': 'Fecha'}, inplace=True)
+
     if df.empty:
         html_table = '<p>No hay información para el periodo seleccionado</p>'
     else:
