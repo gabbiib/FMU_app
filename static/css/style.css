@@ -141,6 +141,12 @@ a.article:hover {
     color: #fff !important;
 }
 
+/* Ajusta el margen izquierdo para mover el logo más a la izquierda */
+.sidebar-footer img {
+    margin-left: -119px; /* Puedes reducir este valor según tus preferencias */
+}
+
+
 /* CONTENT STYLE */
 #content {
     width: calc(100% - 15px);
@@ -437,4 +443,15 @@ label{
 
 #contacto li {
     margin-bottom: 10px;
+}
+
+/* Estilos para la sección de imágenes */
+.img-section {
+    margin-top: 200px; /* Ajusta según sea necesario */
+    display: flex;
+    justify-content: flex-start; /* Posiciona a la izquierda */
+}
+
+.img-section img {
+    margin-right: 1000px; /* Espaciado entre imágenes, ajusta según sea necesario */
 }

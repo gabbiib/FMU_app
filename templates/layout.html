@@ -37,10 +37,21 @@
                     <a class="asidebar" href="{{ url_for('nosotros') }}">Nosotros</a>
                 </li>
             </ul>
+            <!-- Agrega la imagen aquí -->
+            <div class="sidebar-footer">
+                <img src="{{ url_for('static', filename='images/img.png') }}" alt="Tu Imagen" style="width: 200px; height: auto; margin-left: 23px; margin-top:80px;">
+            </div>
         </nav>
         <div id="content">
             {% block content %}{% endblock %}
         </div>
+    </div>
+
+    <!-- Nueva sección de imágenes -->
+    <div class="img-section">
+        <img src="{{ url_for('static', filename='images/imagen1.jpg') }}" alt="Imagen 1">
+        <img src="{{ url_for('static', filename='images/imagen2.jpg') }}" alt="Imagen 2">
+        <!-- Agrega más imágenes según sea necesario -->
     </div>
 </body>
 </html>
