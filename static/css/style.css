@@ -403,3 +403,38 @@ label{
     color: #ddd;
 }
 
+/* Sección de Nosotros */
+#nosotros {
+    margin-top: 40px;
+}
+
+/* Estilos para los encabezados de Nosotros */
+#nosotros h2 {
+    color: #29354E;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los párrafos de Nosotros */
+#nosotros p {
+    margin-bottom: 20px;
+}
+
+/* Estilos para la información de contacto en Nosotros */
+#contacto {
+    margin-top: 40px;
+}
+
+/* Estilos para el mapa de ubicación en Nosotros */
+#ubicacion {
+    margin-top: 20px;
+}
+
+/* Estilos para la sección de medios de contacto */
+#contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contacto li {
+    margin-bottom: 10px;
+}
